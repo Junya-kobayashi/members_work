@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォーム</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="/assets/css/count.css">-->
+</head>
+<body>
+  <form action="/user/:useraddress/new_user_contacts_register" method="post">
+    <h2>あああああ</h2>
+  <p>日本語名：<input type="text" name="new_contact_name_J"></p>
+  <p>英語名：<input type="text" name="new_contact_name_E"></p>
+  <p>詳細　：<input type="text" name="new_contact_details"></p>
+  <p>電話番号：<input type="phone_number" name="new_contact_phone_number"></p>
+  <p>Mail　　：<input type="email_adress" name="new_contact_email_adress"></p>
+  <!--<p>誕生日　：<input type></p>-->
+  <!--<p>画像：<input type="file" name="contact_image" enctype="multipart/form-data"></p>-->
+  <textarea name="memoarea"></textarea>
+  <p><input type="submit" name="register" value="確認"></p>
+  </form>
+</body>
+</html>

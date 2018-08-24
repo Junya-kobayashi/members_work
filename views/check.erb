@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>連絡先確認</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+<body>
+  <p><%=@macaddress %>さんの連絡先一覧</p>
+  <% @list_data.each do |list_data| %>
+  <li>
+    <p><%=list_data.nameJ %></p>
+    <p><%=list_data.nameE %></p>
+    <p><%=list_data.detail %></p>
+    <p><%=list_data.email_adress %></p>
+    <p><%=list_data.phone_number %></p>
+    <p><%=list_data.memo %></p>
+  </li>
+  <% end %>
+</body>
+</html>

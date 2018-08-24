@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ようこそ</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+<body>
+  <p>こんにちは!!!   <%=@macaddress %>さん</p>
+  <form action="/user/<%=@macaddress%>/new_user_contacts" method="get">
+    <p><input type="submit" name="register_contacts" value="連絡先の登録"></p>
+  </form>
+  <a href="/user/<%=@macaddress%>/check_user_contacts">
+    <p><input type="submit" name="register_contacts" value="連絡先の確認"></p>
+  </a>
+</body>
+</html>
